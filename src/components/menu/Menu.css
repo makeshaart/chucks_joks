@@ -1,0 +1,18 @@
+.menu_bar{
+    grid-area: m;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(217, 210, 223);
+    border: none;
+}
+a{
+    text-decoration: none;
+    border: solid;
+    padding: 6px;
+    margin: 30px auto;
+}
+a:active{
+    color: grey;
+}
