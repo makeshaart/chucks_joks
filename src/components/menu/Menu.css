@@ -6,13 +6,20 @@
     justify-content: flex-start;
     background-color: rgb(217, 210, 223);
     border: none;
+    border-radius: 0.9%;
 }
 a{
     text-decoration: none;
     border: solid;
+    border-radius: 5%;
     padding: 6px;
     margin: 30px auto;
+    background-color: rgb(172, 167, 172);
+    border-color: rgb(172, 167, 172);
+    color: rgb(110, 99, 110);
 }
-a:active{
-    color: grey;
+a:active, a:focus{
+    background-color: rgb(107, 105, 105);
+    border-color: rgb(107, 105, 105);
+    color: rgb(223, 219, 219);
 }
