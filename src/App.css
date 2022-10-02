@@ -6,14 +6,16 @@
   gap: 20px;
   max-width: 100%;
   padding: 10px 10px;
-  background-color: violet;
+  background-color: rgb(172, 167, 172);
   min-height: 96vh;
   max-height: 100% ;
+  color: rgb(107, 105, 105);
 }
 .screen{
   grid-area: s;
   background-color: rgb(217, 210, 223);
   border: none;
+  border-radius: 0.9%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,11 +32,17 @@ button{
   width: 100px;
   height: 40px;
   font-size: medium;
-  background-color: violet; 
+  border-style: none;
+  border-radius: 5%;
+  padding: 6px;
+  margin: 30px auto;
+  background-color: rgb(172, 167, 172);
+  border-color: rgb(172, 167, 172);
+  color: rgb(110, 99, 110);
 }
-/* button{
-  background-color: red;
-} */
+button:active {
+  background-color: rgb(44, 43, 43);
+}
 
 
 
