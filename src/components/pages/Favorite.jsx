@@ -8,7 +8,7 @@ const Favorite = () => {
     const [favorite, setList] = useState(jokeList);
 
     if (!favorite) {
-        return <div className='content'><h2>ВЫ НЕ ВЫБРАЛИ ЛЮБИМУЮ ШУТКУ</h2></div>
+        return <div className='content'><h2>YOU DIDN' T CHOOSE YOUR FAVORITE JOKE</h2></div>
     }
 
 
