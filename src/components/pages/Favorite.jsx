@@ -7,7 +7,7 @@ const Favorite = () => {
     const jokeList=JSON.parse(localStorage.getItem('jokes'));
     const [favorite, setList] = useState(jokeList);
 
-    if (!favorite) {
+    if (!favorite || favorite.length == 0 ) {
         return <div className='content'><h2>ВЫ НЕ ВЫБРАЛИ ЛЮБИМУЮ ШУТКУ</h2></div>
     }
 

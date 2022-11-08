@@ -3,14 +3,11 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import Button from '../button/Button';
 
-
 const GetList = () => {
     const [jokes, setJokes] = useState([]);
     const [click, setClick] = useState(false);
     const [isActive, setIsActive] = useState(false);
 
-
-    let i = 0;
     useEffect(() => {
         fetch('https://api.chucknorris.io/jokes/random')
             .then((response) => response.json())
@@ -18,6 +15,7 @@ const GetList = () => {
                 [
                     ...jokes,
                     {
+                        id: jokes.id,
                         text: result.value,
                     }
                 ]
@@ -44,12 +42,10 @@ const GetList = () => {
             <div className='content'>
                 <Button text='GET' onClick={() => { setClick(!click) }} />
                 <div>{jokes.map((joke, n) => {
-                    for (let i = 0; i < 10; i++) {
-                        return <div key={joke.i}>
-                            <p>{++n}. {joke.text}</p>
-                            <Button text='add favorite' key={joke.i} onClick={(event) => { handleAddFavorite(joke) }} />
-                        </div>
-                    }
+                    return <div key={joke.i} >
+                        <p>{++n}. {joke.text}</p>
+                        <Button text='add favorite' key={joke.id} onClick={(event) => { handleAddFavorite(joke) }} />
+                    </div>
                 })}
                 </div>
             </div>

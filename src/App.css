@@ -1,21 +1,29 @@
  .App {
   display: grid;
-  grid-template-areas: 
-  "m s";
+  grid-template-areas: "m s";
   grid-template-columns: 2fr 8fr;
   gap: 20px;
-  max-width: 100%;
+  width: 100%;
   padding: 10px 10px;
   background-color: rgb(172, 167, 172);
   min-height: 96vh;
   max-height: 100% ;
-  color: rgb(107, 105, 105);
+  color: rgb(80, 79, 79);
 }
+
+.menu_bar_container{
+  grid-area: m;
+  background-color: rgb(217, 210, 223);
+  position: fixed;
+  border-radius: 5px;
+  width: 30ch;
+}
+
 .screen{
   grid-area: s;
   background-color: rgb(217, 210, 223);
   border: none;
-  border-radius: 0.9%;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,9 +48,10 @@ button{
   border-color: rgb(172, 167, 172);
   color: rgb(110, 99, 110);
 }
-button:active {
+button:active{
   background-color: rgb(44, 43, 43);
 }
+
 
 
 

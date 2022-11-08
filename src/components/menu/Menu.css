@@ -1,12 +1,14 @@
+
 .menu_bar{
-    grid-area: m;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     background-color: rgb(217, 210, 223);
     border: none;
-    border-radius: 0.9%;
+    border-radius: 5px;
+    height: 100vh;
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -18,7 +20,7 @@ a{
     border-color: rgb(172, 167, 172);
     color: rgb(110, 99, 110);
 }
-a:active, a:focus{
+a:hover, a:focus{
     background-color: rgb(107, 105, 105);
     border-color: rgb(107, 105, 105);
     color: rgb(223, 219, 219);
