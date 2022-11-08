@@ -9,11 +9,13 @@
   background-color: rgb(104, 100, 104);
   min-height: 96vh;
   max-height: 100% ;
+  color: rgb(107, 105, 105);
 }
 .screen{
   grid-area: s;
   background-color: rgb(217, 210, 223);
   border: none;
+  border-radius: 0.9%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -39,10 +41,6 @@ button{
 }
 button:hover{
   color: white;
-}
-/* button{
-  background-color: red;
-} */
 
 
 
